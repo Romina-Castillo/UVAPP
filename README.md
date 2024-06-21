@@ -1,8 +1,9 @@
 npm create vite@latest
-elegi react
-elegi javascript + swc
+  elegi react
+  elegi javascript + swc
 
 npm install
+
 npm run dev
 
 
