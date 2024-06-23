@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 npm create vitalatest
 elegi react
 elegi javascript + swc
 
 npm install
+=======
+npm create vite@latest
+  elegi react
+  elegi javascript + swc
+
+npm install
+
+>>>>>>> aa83a28dd2633ce85c5169a03fa3b2282c751e2f
 npm run dev
 
 
