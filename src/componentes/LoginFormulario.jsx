@@ -1,12 +1,10 @@
-import "./Formulario.css"
+import "./LoginFormulario.css"
 import { useState } from "react"
 
 export function Formulario({setUser}) {
     const [usuario, setUsuario] = useState ("")
     const [contraseña, setContraseña] = useState ("")
     const [error, setError] = useState (false)
-
-
 
     const handleSubmit = (evento) => {
         evento.preventDefault()
@@ -25,22 +23,35 @@ export function Formulario({setUser}) {
 
     return (
         <section>
-            <h1>Login</h1>
+            <h1>Iniciar Sesión</h1>
 
-            <form className="Formulario">
+            <form 
+                className="Formulario"
+                onSubmit={handleSubmit}
+            >
                 <input 
                     type="text"
+                    placeholder= "Ingrese su correo"
                     value={usuario}
                     onChange={evento=> setUsuario(evento.target.value)}     ///captura lo que pongamos como nombre de usuario en el input
                 /> 
                 <input 
                     type="password"
+                    placeholder= "Ingrese su contraseña"
                     value={contraseña}
                     onChange={evento => setContraseña(evento.target.value)}     ///captura la contraseña que se ingrese en el input
                     />
-                <button>Iniciar sesión</button>
+                <button className="login-btn">Iniciar sesión</button>
+
+                <p className="text"> O iniciar sesión con: </p>
+
+                <div className="alt-login"> 
+                    <div className="facebook"></div>
+                    <div className="google"></div>
+                </div>
+
             </form>
-            {error && <p>Todos los campos son obligatorios.</p>}
+        {error && <p>Todos los campos son obligatorios.</p>}
         </section>
     )
 }

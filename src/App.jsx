@@ -1,4 +1,4 @@
-import { Formulario } from './componentes/Formulario'
+import { Formulario } from './componentes/LoginFormulario'
 import { Home } from './componentes/Home'
 import { useState } from 'react'
 

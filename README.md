@@ -1,3 +1,11 @@
+npm create vitalatest
+elegi react
+elegi javascript + swc
+
+npm install
+npm run dev
+
+
 http://localhost:5173/
 es local host con el que estaba haciendo el proyecto, por si las dudas
 
