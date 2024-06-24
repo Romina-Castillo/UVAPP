@@ -2,6 +2,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "CustomFont";
+
 }
 
 @font-face {
@@ -18,17 +19,20 @@
 }
 
 .Formulario{
-    background-color: white;
-    width: 20em;
-    height: 25em;
+    background:rgb(202, 167, 217);
+    color: white;
+    width: 25em;
+    height: 30em;
     position: relative;
     border-radius: 1em;
-    box-shadow: 0 0.55em 0.550em rgb(150, 158, 156);
+    box-shadow: 0 0.28em 0.550em rgb(150, 158, 156);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
+
+
 
 .alt-login {
     width: 80%;
@@ -41,7 +45,7 @@
     width: 45%;
     height: 90%;
     border-radius: 0.25em;
-    background-color: rgb(55, 104, 211);
+    background-color: rgb(59, 113, 219);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -54,19 +58,19 @@
 input {
     border: none;
     background-color: rgb(255, 255, 255);
-
     height: 4em;
     width: 80%;
-    border-radius: 0.25em;
+    border-radius: 40px;
     text-align: center;
     padding: 2em;
+    margin: 0.1% 0;
 }
 
 input:focus {
     outline-color: grey;
 }
 
-.login-bnt {
+button {
     width: 40%;
     height: 3em;
     background-color: rgb(32, 117, 255);
@@ -76,4 +80,8 @@ input:focus {
     transition: 0.5x;
     border-radius: 0.25em;
     cursor: pointer;
+}
+
+.link-registro {
+
 }
