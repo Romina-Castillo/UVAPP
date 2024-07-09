@@ -7,7 +7,7 @@ export function Home({user, setUser} ) {
         <div>
         <h1> Bienvenido! </h1>
         <h2> {user} </h2>
-        <button onClick={handleLogout}> Cerrar Sesión </button>
+        <button className="close-btn" onClick={handleLogout}> Cerrar Sesión </button>
         </div>
     )
 }
