@@ -2,7 +2,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "CustomFont";
-
 }
 
 @font-face {
@@ -19,8 +18,8 @@
 }
 
 .Formulario{
-    background:rgb(202, 167, 217);
-    color: white;
+    background:rgb(175, 215, 205);
+    color: rgb(252, 0, 0);
     width: 25em;
     height: 30em;
     position: relative;
@@ -43,7 +42,7 @@
     width: 45%;
     height: 90%;
     border-radius: 0.25em;
-    background-color: rgb(59, 113, 219);
+    background-color: rgb(94, 104, 185);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -68,10 +67,10 @@ input:focus {
     outline-color: grey;
 }
 
-button {
+.login-btn {
     width: 40%;
     height: 3em;
-    background-color: rgb(32, 117, 255);
+    background-color: rgb(94, 104, 185);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,3 +79,9 @@ button {
     cursor: pointer;
 }
 
+p {
+    color: rgb(255, 255, 255);
+}
+p1 {
+    color: red;
+}

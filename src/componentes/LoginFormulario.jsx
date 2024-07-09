@@ -41,6 +41,7 @@ export function Formulario({setUser}) {
                     value={contraseña}
                     onChange={evento => setContraseña(evento.target.value)}     ///captura la contraseña que se ingrese en el input
                     />
+                {error && <p1>Todos los campos son obligatorios.</p1>}
                 <button className="login-btn">Iniciar sesión</button>
 
                 <p className="text"> O iniciar sesión con: </p>
@@ -51,7 +52,7 @@ export function Formulario({setUser}) {
                 </div>
 
             </form>
-        {error && <p>Todos los campos son obligatorios.</p>}
+        
         </section>
     )
 }
